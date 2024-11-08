@@ -39,7 +39,7 @@ else if (age_1 > age_3) {
 const checkAge = function(age) { //const название-функции age - функция принимает аргумент 
     const age_2 = 18; //постоянное условие
     const age_3 = 60;
-    if (age < age_2){
+    if (age < age_2) {
         console.log("You don't have access cause your age is " + age + " It's less then " + age_2) 
     }
     else if (age >= age_2 && age < age_3) {//&& - И то, и то условие должно соблюдаться
@@ -58,11 +58,11 @@ checkAge(61);
 const checkAge = function(age) {
     const age_2 = 18;
     const age_3 = 60;
-if (typeof age !== "number"){  //не равно
+if (typeof age !== "number") {  //не равно
     console.log("Error, not number");
     return; //останавливает функцию, если условие не совпадает
   }
-    if (age < age_2){
+    if (age < age_2) {
         console.log("You don't have access cause your age is " + age + " It's less then " + age_2) 
     }
     else if (age >= age_2 && age < age_3) {
@@ -80,15 +80,15 @@ checkAge("Abd");
 checkAge("@34");
 
 //3**
-const checkAge = function(age){
+const checkAge = function(age) {
     age = parseInt(age); //переводит строки в целые числа или Number
     const age_2 = 18;
     const age_3 = 60;
-if (typeof age !== "number" || isNaN(age)){ //isNaN отсеивает строки с не цифрами, преобразованные number
+if (typeof age !== "number" || isNaN(age)) { //isNaN отсеивает строки с не цифрами, преобразованные number
     console.log("Error, not number");
     return; //останавливает функцию, если условие не совпадает
   }
-    if (age < age_2){
+    if (age < age_2) {
         console.log("You don't have access cause your age is " + age + " It's less then " + age_2) 
     }
     else if (age >= age_2 && age < age_3) {
@@ -106,18 +106,18 @@ checkAge("Abd");
 checkAge("2");
 
 //4****
-const checkAge = function(){
+const checkAge = function() {
     let age = prompt("Enter your Age:");// prompt открывает модальное окно в браузере, предлагая пользователю ввести данные. 
 
     age = parseInt(age); //переводит строки в целые числа или Number
 
     const age_2 = 18;
     const age_3 = 60;
-if (typeof age !== "number" || isNaN(age)){ //isNaN отсеивает строки с не цифрами, преобразованные number
+if (typeof age !== "number" || isNaN(age)) { //isNaN отсеивает строки с не цифрами, преобразованные number
     console.log("Error, not number");
     return; //останавливает функцию, если условие не совпадает
   }
-    if (age < age_2){
+    if (age < age_2) {
         console.log("You don't have access cause your age is " + age + " It's less then " + age_2) 
     }
     else if (age >= age_2 && age < age_3) {
@@ -132,7 +132,7 @@ if (typeof age !== "number" || isNaN(age)){ //isNaN отсеивает стро�
 //JS. HM2
 const validateString = function(str) {
     let validStr = true;
-    if (typeof str !== "string"){
+    if (typeof str !== "string") {
     console.log(str, "Error, not string");
     return; 
   }
@@ -141,7 +141,7 @@ const validateString = function(str) {
         console.log(str, "Field should contains min 5 symbols") 
         validStr = false;
     }
-    if (strLenght > 64){
+    if (strLenght > 64) {
         console.log(str, "Field should contains max 64 symbols") 
         validStr = false;
     }
